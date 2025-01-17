@@ -1,0 +1,12 @@
+тетс кейс: Неавторизированный доступ.
+Описание :Проверка, что APi запрос отказывает в доступе без правильной авторизации 
+Метод: GET
+URL: https://apichallenges.herokuapp.com/secret/note
+Шаги:
+1. Отправить запрос по URL: https://apichallenges.herokuapp.com/secret/note
+Ожидаемый результат:
+1.Код ответа: 401 Unauthorized
+2.Сообщение: "Unauthorized access"
+Фактический результат:
+1.Код ответа: 401 Unauthorized
+2. окно ответа пустое.
