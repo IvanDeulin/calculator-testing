@@ -1,0 +1,23 @@
+Тест-кейс: Отсутствие обязательных параметров
+Описание: Проверка, что сервер возвращает ошибку при отсутствии обязательного параметра в запросе.
+Предварительная подготовка:
+1.Метод: POST
+2.URL: https://apichallenges.herokuapp.com/todos
+Тело запроса:
+{
+  "email": "user@example.com"
+}
+Шаги
+1. Отправка запроса по URL: https://apichallenges.herokuapp.com/todos
+Ожидаемые результаты.
+1.Код ответа: 422 Unprocessable Entity
+2.Сообщение: "Password is required"
+Фактический результат:
+1. код ответа 401
+2. тело ответа
+{
+    "errorMessages": [
+        "Cannot amend details. Missing a valid X-CHALLENGER header."
+    ]
+}
+
