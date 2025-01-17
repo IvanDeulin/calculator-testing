@@ -1,0 +1,17 @@
+Тест-кейс: Некорректный формат запроса 
+Описание: Проверка, что сервер возвращает ошибку при неправильном формате запроса (например, неверный формат JSON).
+Предварительная подготовка
+Метод: POST
+URL: https://apichallenges.herokuapp.com/todos
+Тело отправляемого запроса.
+{
+  "name": "John Doe",
+  "age": "twenty-five"
+}
+Ожидаемый результат:
+Код ответа: 400 Bad Request
+Сообщение: "Invalid data format. 'age' must be a number."
+Фактический результат:
+Код ответа: 401
+Сообщение ответа
+{"errorMessages":["Cannot amend details. Missing a valid X-CHALLENGER header."]}
